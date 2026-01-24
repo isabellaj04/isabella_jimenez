@@ -1,0 +1,10 @@
+<!DOCTYPE html> 
+<html>
+<head> 
+    <title> My Webpage </title>
+    </head>
+    <body>
+     <p>Two models looking into your eyes.</p>
+    <img src="images/banner-image-1.jpg" alt="two models">
+</body>
+</html>
