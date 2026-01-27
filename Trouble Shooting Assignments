@@ -1,0 +1,21 @@
+<h2> tag is not closed at the beginning of the coding. 
+Correction: 
+<h2> Lorem ipsum dolor </h2> 
+<p> The first paragraph is not closed as well. 
+Correction: 
+<p>
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus convallis nisl in feugiat efficitur. Donec consectetur nulla diam, eget elementum nibh pretium vel. Ut finibus, purus ac maximus facilisis, felis odio accumsan magna, eu volutpat purus metus et augue. Vestibulum viverra ultricies lectus. Aenean aliquam, enim et ultrices rhoncus, leo dui hendrerit arcu, nec dignissim neque dolor eu urna. Fusce vel dapibus ipsum. Donec nec maximus enim. 
+</p>
+</br> there is a misplaced and invalid closed line break tag at the bottom of the first paragraph. 
+Correction:
+   <p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus convallis nisl in feugiat efficitur. Donec consectetur nulla diam, eget elementum nibh pretium vel. Ut finibus, purus ac maximus facilisis, felis odio accumsan magna, eu volutpat purus metus et augue. Vestibulum viverra ultricies lectus. <br>
+Aenean aliquam, enim et ultrices rhoncus, leo dui hendrerit arcu, nec dignissim neque dolor eu urna. Fusce vel dapibus ipsum. Donec nec maximus enim. 
+<p/>
+There is an extra < within the first anchor tag.
+Correction: 
+<a href="https://www.google.com" target="_blank">iaculis</a>
+
+Email link missing a mailto:
+Correction: 
+<a href="mailto:email@example.com">email@example.com</a>
