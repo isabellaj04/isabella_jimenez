@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset= "utf-8">
+<meta name="viewport" content="width=device=width, inital-scale=1.0">
+<title> My CSS Example </title>
+</head>
+
+<body>
+<p>Hello there</p>
+    
+    <style type="text/css">
+    .card {background: #0000FF;
+    }
+    .hearts{background:#e77573; 
+    }
+    #spotlight {background: orange; 
+    }
+    #highlight {background: rgb(197, 197, 8);
+    }
+p{font-weight: bold;
+}
+div{font-weight:lighter;  
+}
+@media screen and (max-width:500px) {
+    
+    #spotlight {background:rgb(129, 129, 129); 
+    }
+    #highlight {background: rgb(89, 10, 168);
+    }
+}
+    </style>
+<div style="background: pink;">content</div>
+<div id="spotlight" class="card">content</div>
+<div id="highlight" class="card">content</div>
+<div class="card">content</div>
+<div class="card" >content</div>
+<div class="hearts">content</div>
+</body>
+
+
+</html>
