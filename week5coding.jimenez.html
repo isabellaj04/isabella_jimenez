@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Interaction Page</title>
+
+<style>
+body {
+    background: #f4f4f4;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+#output {
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>User Information Results</h2>
+<div id="output"></div>
+
+<script>
+
+// Create three variables and ask three questions
+let userName = prompt("What is your name?");
+let userAge = prompt("How old are you?");
+let favoriteColor = prompt("What is your favorite color?");
+
+// Assign answers (userAge converted to number)
+userAge = Number(userAge);
+
+let message = "";
+
+// IF statement
+if (userAge >= 18) {
+    message += "<p>You are an adult.</p>";
+}
+
+// IF...ELSE statement
+if (userAge >= 16) {
+    message += "<p>You are old enough to drive.</p>";
+} else {
+    message += "<p>You are not old enough to drive.</p>";
+}
+
+// IF...ELSE IF...ELSE statement
+if (userAge < 13) {
+    message += "<p>You are a child.</p>";
+} else if (userAge >= 13 && userAge < 18) {
+    message += "<p>You are a teenager.</p>";
+} else {
+    message += "<p>You are an adult.</p>";
+}
+
+// SWITCH statement (Bonus)
+switch (favoriteColor.toLowerCase()) {
+    case "red":
+        message += "<p>Red is bold and energetic!</p>";
+        break;
+    case "blue":
+        message += "<p>Blue is calm and peaceful!</p>";
+        break;
+    case "green":
+        message += "<p>Green represents nature and growth!</p>";
+        break;
+    default:
+        message += "<p>That is a unique favorite color!</p>";
+}
+
+// Display results
+document.getElementById("output").innerHTML = 
+"<p>Hello " + userName + "!</p>" + message;
+
+</script>
+
+</body>
+</html>
