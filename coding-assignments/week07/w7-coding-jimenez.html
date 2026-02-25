@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Function Practice</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        button {
+            margin: 10px;
+            padding: 10px 15px;
+            background-color: lightblue;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: deepskyblue;
+        }
+
+        #output {
+            margin-top: 20px;
+            font-size: 18px;
+            color: darkgreen;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Function Practice Page</h1>
+
+    <button onclick="sayHello()">
+        Click to Say Hello
+    </button>
+
+    <button onclick="showFavoriteColor('Blue')">
+        Show Favorite Color
+    </button>
+
+    <button onclick="displayArea()">
+        Calculate Rectangle Area
+    </button>
+
+    <p id="output"></p>
+
+    <script>
+        function sayHello() {
+            document.getElementById("output").innerHTML =
+                "Hello there!";
+        }
+
+        function showFavoriteColor(color) {
+            document.getElementById("output").innerHTML =
+                "Your favorite color is " + color + ".";
+        }
+
+        function calculateArea(length, width) {
+            let area = length * width;
+            return area;
+        }
+
+        function displayArea() {
+            let result = calculateArea(5, 3);
+
+            document.getElementById("output").innerHTML =
+                "The area is " + result + ".";
+        }
+
+    </script>
+
+</body>
+</html>
