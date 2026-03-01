@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array Practice Assignment</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+
+        section {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .gallery img {
+            width: 200px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        nav a {
+            display: inline-block;
+            margin-right: 15px;
+            text-decoration: none;
+            color: white;
+            background-color: #0077cc;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: #005fa3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <h2>Alphabetically Sorted List</h2>
+        <ul id="sortedList"></ul>
+    </section>
+
+    <section>
+        <h2>Image Gallery</h2>
+        <div class="gallery" id="imageGallery"></div>
+    </section>
+
+    <section>
+        <h2>Website Menu</h2>
+        <nav id="menu"></nav>
+    </section>
+
+    <script>
+
+
+        let fruits = ["Banana", "Apple", "Mango", "Cherry", "Orange"];
+
+        fruits.sort();
+
+        let listContainer = document.getElementById("sortedList");
+
+        for (let i = 0; i < fruits.length; i++) {
+            let li = document.createElement("li");
+            li.textContent = fruits[i];
+            listContainer.appendChild(li);
+        }
+
+        let images = [
+            "https://picsum.photos/id/1015/600/400",
+            "https://picsum.photos/id/1025/600/400",
+            "https://picsum.photos/id/1035/600/400",
+            "https://picsum.photos/id/1045/600/400",
+            "https://picsum.photos/id/1055/600/400"
+        ];
+
+        let gallery = document.getElementById("imageGallery");
+
+        for (let i = 0; i < images.length; i++) {
+
+            let img = document.createElement("img");
+
+            img.src = images[i];
+
+            img.addEventListener("click", function() {
+                window.open(images[i], "_blank");
+            });
+
+            gallery.appendChild(img);
+        }
+
+        let menuLinks = [
+            ["Google", "https://www.google.com"],
+            ["YouTube", "https://www.youtube.com"],
+            ["Wikipedia", "https://www.wikipedia.org"],
+            ["GitHub", "https://www.github.com"],
+            ["W3Schools", "https://www.w3schools.com"]
+        ];
+
+        let menu = document.getElementById("menu");
+
+        for (let i = 0; i < menuLinks.length; i++) {
+
+            let link = document.createElement("a");
+
+            link.textContent = menuLinks[i][0];  
+            link.href = menuLinks[i][1];          
+            link.target = "_blank";
+
+            menu.appendChild(link);
+        }
+
+    </script>
+
+</body>
+</html>
