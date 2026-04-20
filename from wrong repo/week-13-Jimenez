@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation Assignment</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1 class="fade-in">Interactive Animation Page</h1>
+
+  <!-- Hover animation element -->
+  <div class="hover-card">
+    Hover Over Me
+  </div>
+
+  <!-- Click animation button -->
+  <button id="animateBtn" onclick="buttonFunction(event)">
+    Click Me
+  </button>
+
+  <!-- Floating animation -->
+  <div class="floating-circle"></div>
+
+  <!-- Loading animation -->
+  <div class="loader">
+    <div class="bar"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
