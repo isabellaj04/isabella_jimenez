@@ -1,0 +1,40 @@
+body{
+font-family: Arial, sans-serif;
+background:#fff8f0;
+}
+
+.hero{
+background:#4ea8de;
+color:white;
+padding:80px;
+}
+
+.product img{
+border-radius:10px;
+transition: transform .3s;
+}
+
+.product img:hover{
+transform:scale(1.05);
+}
+
+.menu-item{
+cursor:pointer;
+margin-top:20px;
+}
+
+.menu-item:hover{
+background:#ffe8a3;
+}
+
+button{
+background:#4ea8de;
+color:white;
+border:none;
+padding:10px;
+margin-top:10px;
+}
+
+button:hover{
+background:#2b7db3;
+}
